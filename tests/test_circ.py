@@ -7,6 +7,11 @@ def test_correct():
     assert np.isclose(circumference(8), 50.26548245743669)
     assert np.isclose(circumference(32.56), 204.58051360176734)
 
+def test_correct_2():
+    assert np.isclose(circumference_2(0.5), 3.141592653589793/2)
+    assert np.isclose(circumference_2(8), 50.26548245743669/2)
+    assert np.isclose(circumference_2(32.56), 204.58051360176734/2)
+
 def test_dict():
     with pytest.raises(ValueError):
         circumference({'radius': 5})
