@@ -1,6 +1,7 @@
 import numpy as np
 import pytest
 from pack.core import circumference
+from pack.core import circumference_2
 
 def test_correct():
     assert np.isclose(circumference(0.5), 3.141592653589793)
