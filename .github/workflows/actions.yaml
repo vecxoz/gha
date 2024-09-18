@@ -23,5 +23,5 @@ jobs:
       - name: Test with Pytest
         run: |
           pytest --cov=pack --cov-report=term-missing tests
-      # - name: Coveralls
-      #   uses: coverallsapp/github-action@v2
+      - name: Coveralls
+        uses: coverallsapp/github-action@v2
